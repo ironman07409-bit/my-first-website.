@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11110f">
+  <title>Tara Food Corner | Balangir</title>
+  <meta name="description" content="Discover Tara Food Corner in Rugudipada, Balangir, Odisha. Explore our menu and find directions.">
+
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #11110f;
+      color: #f8f2e7;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      padding: 20px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      border-bottom: 1px solid #393328;
+    }
+    .brand { color: #e4bd72; font-weight: bold; font-size: 21px; }
+    nav a {
+      color: #f8f2e7;
+      text-decoration: none;
+      margin-left: 14px;
+      font-size: 14px;
+    }
+    .hero {
+      min-height: 480px;
+      padding: 90px 7%;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, #11110f 8%, #11110fdd 48%, #11110f55),
+        url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+    }
+    .hero-content { max-width: 590px; }
+    .eyebrow {
+      color: #e4bd72;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+    h1 { font-size: clamp(38px, 7vw, 65px); line-height: 1.1; margin: 15px 0; }
+    h2 { font-size: 30px; }
+    p { color: #c9c2b6; }
+    .btn {
+      display: inline-block;
+      background: #d8b46a;
+      color: #17140e;
+      padding: 12px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 8px 8px 0 0;
+    }
+    .btn-outline {
+      border: 1px solid #d8b46a;
+      color: #f8f2e7;
+      background: transparent;
+    }
+    section { padding: 55px 7%; }
+    .section-heading { text-align: center; margin-bottom: 30px; }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+    .food-card {
+      background: #1b1a17;
+      border: 1px solid #393328;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .food-card img {
+      display: block;
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+    }
+    .food-card div { padding: 16px; }
+    .food-card h3 { margin: 0; }
+    .price { color: #e4bd72; font-weight: bold; }
+    .info {
+      background: #1b1a17;
+      border-top: 1px solid #393328;
+      border-bottom: 1px solid #393328;
+    }
+    footer { text-align: center; padding: 25px; color: #aaa294; }
+    @media (max-width: 600px) {
+      header { align-items: flex-start; flex-direction: column; }
+      nav a { margin: 0 12px 0 0; }
+      .hero { min-height: 420px; padding-top: 65px; padding-bottom: 65px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">TARA FOOD CORNER</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">Welcome to Tara Food Corner</div>
+        <h1>Good Food.<br>Great Moments.</h1>
+        <p>
+          Visit us in Rugudipada, Balangir, Odisha.
+          Discover your next favourite meal.
+        </p>
+        <a class="btn"
+           href="https://maps.app.goo.gl/umDTrGxN6R8vvsZg8"
+           target="_blank" rel="noopener">Get Directions</a>
+        <a class="btn btn-outline" href="#menu">Explore Menu</a>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="section-heading">
+        <div class="eyebrow">Freshly prepared</div>
+        <h2>Our Menu</h2>
+        <p>Replace these sample dishes and prices with the restaurant's real menu.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="food-card">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=80" alt="Indian curry">
+          <div>
+            <h3>Special Curry</h3>
+            <p>A sample menu item. Add the real dish description.</p>
+            <span class="price">Price to be confirmed</span>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=700&q=80" alt="Biryani rice">
+          <div>
+            <h3>Special Biryani</h3>
+            <p>A sample menu item. Update with the actual offering.</p>
+            <span class="price">Price to be confirmed</span>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80" alt="Indian food">
+          <div>
+            <h3>Chef's Special</h3>
+            <p>Feature a popular dish served at the restaurant.</p>
+            <span class="price">Price to be confirmed</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="info" id="contact">
+      <div class="section-heading">
+        <div class="eyebrow">Come visit us</div>
+        <h2>Find Us</h2>
+        <p>Tara Food Corner</p>
+        <p>Rugudipada, Balangir, Odisha 767001, India</p>
+        <a class="btn"
+           href="https://maps.app.goo.gl/umDTrGxN6R8vvsZg8"
+           target="_blank" rel="noopener">Open Google Maps</a>
+        <p>Phone: Add the verified restaurant phone number</p>
+        <p>Opening hours: Confirm with the restaurant</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Tara Food Corner. All rights reserved.
+  </footer>
+
+</body>
+</html>
