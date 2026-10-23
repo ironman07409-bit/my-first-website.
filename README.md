@@ -1,1 +1,65 @@
 # my-first-website.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #111318;
+      color: #f5f0e6;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    main { max-width: 600px; }
+
+    .tag {
+      color: #d8b879;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 9vw, 64px);
+      margin: 20px 0;
+    }
+
+    p {
+      color: #c3c5cb;
+      line-height: 1.8;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 14px 22px;
+      border-radius: 8px;
+      background: #d8b879;
+      color: #111318;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="tag">My First Project</div>
+    <h1>Hello, World.</h1>
+    <p>Welcome to my first website.
+       I'm learning to create things on the internet,
+       one step at a time.</p>
+    <a href="https://github.com/">Explore GitHub</a>
+  </main>
+</body>
+</html>
+  
